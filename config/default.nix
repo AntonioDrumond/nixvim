@@ -1,6 +1,7 @@
 { config, lib, ... }:
 {
   imports = [
+		./keys.nix
 	];
   options = {
     theme = lib.mkOption {
