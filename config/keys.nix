@@ -5,7 +5,8 @@
 		{
 			mode = "n";
 			key = "<C-q>";
-			action "<:w>";
+			action = "<:w<CR>>";
 		}
+
 	];
 }
