@@ -1,0 +1,2 @@
+# nixvim
+My NixVim flake
