@@ -2,6 +2,8 @@
 {
   imports = [
 		./keys.nix
+
+		./plug/colorscheme/colorscheme.nix
 	];
   options = {
     theme = lib.mkOption {
