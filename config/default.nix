@@ -44,9 +44,9 @@
     # ./plug/utils/undotree.nix
   ];
 
-	plugins.web-devicons.enable = true;
 
   options = {
+		plugins.web-devicons.enable = true;
     theme = lib.mkOption {
       default = lib.mkDefault "paradise";
       type = lib.types.enum [
