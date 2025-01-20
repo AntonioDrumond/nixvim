@@ -16,6 +16,7 @@
 
 		# Text wrapping
 		wrap = true;
+		signcolumn = "yes";
 
 		# Enable mouse
 		mouse = "a";
@@ -46,6 +47,16 @@
 
 		# 24-bit colors
 		termguicolors = true;
+
+		# Reduce which-key timeout to 10ms
+		timeoutlen = 10;
+
+		# Text encoding
+		encoding = "utf-8";
+		fileencoding = "utf-8";
+
+		# More space in the neovim command line for displaying messages
+		cmdheight = 0;
 	};
 
 	performance.byteCompileLua = {
