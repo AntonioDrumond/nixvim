@@ -44,7 +44,7 @@
     # ./plug/utils/undotree.nix
   ];
 
-	plugins.web-devicons.enable;
+	plugins.web-devicons.enable = true;
 
   options = {
     theme = lib.mkOption {
