@@ -2,6 +2,7 @@
 <div align="center">
     <img src="img/neovim-flake-logo-work.svg" alt="neovim-flake Logo"  width="200">
 </div>
+
 My Neovim config using [NixVim](https://github.com/nix-community/nixvim) (Neovim distribution configured with the nix language)
 ## Using my config
 If you have nix(The package manager) installed,  you can run my config with:
