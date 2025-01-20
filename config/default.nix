@@ -46,7 +46,6 @@
 
 
   options = {
-		plugins.web-devicons.enable = true;
     theme = lib.mkOption {
       default = lib.mkDefault "paradise";
       type = lib.types.enum [
