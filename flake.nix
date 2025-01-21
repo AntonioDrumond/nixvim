@@ -7,7 +7,6 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-      plugins.mini.enable = true;
     };
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
