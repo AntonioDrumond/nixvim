@@ -14,7 +14,8 @@
   keymaps = lib.mkIf config.plugins.telescope.enable [
     {
       mode = "n";
-      key = "<leader>fF";
+      # key = "<leader>fF";
+			key = "<C-o>";
       action.__raw = ''
         function()
           require("telescope.builtin").find_files({ hidden = true, no_ignore = true})
