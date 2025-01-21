@@ -49,7 +49,7 @@
 		termguicolors = true;
 
 		# Reduce which-key timeout to 10ms
-		timeoutlen = 10;
+		timeoutlen = 100;
 
 		# Text encoding
 		encoding = "utf-8";
