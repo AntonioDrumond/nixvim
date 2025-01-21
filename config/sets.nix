@@ -48,8 +48,8 @@
 		# 24-bit colors
 		termguicolors = true;
 
-		# Reduce which-key timeout to 10ms
-		timeoutlen = 100;
+		# Reduce which-key timeout to 200ms
+		timeoutlen = 200;
 
 		# Text encoding
 		encoding = "utf-8";
