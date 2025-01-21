@@ -73,7 +73,7 @@
   ];
 
   plugins.telescope = {
-    enable = false;
+    enable = true;
 
     # extensions = {
     #   file-browser = {
