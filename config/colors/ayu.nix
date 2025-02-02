@@ -1,48 +1,18 @@
-{
-  lib,
-  ...
-}:
-let
-  inherit (lib.nixvim) defaultNullOpts toLuaObject;
-in
-lib.nixvim.plugins.mkNeovimPlugin {
-  name = "ayu";
-  isColorscheme = true;
-  packPathName = "neovim-ayu";
-  package = "neovim-ayu";
-  # The colorscheme option is set by the `setup` function.
-  colorscheme = null;
-  callSetup = false;
-
-  maintainers = [ lib.maintainers.GaetanLepage ];
-
-  deprecateExtraOptions = true;
-  optionsRenamedToSettings = [
-    "mirage"
-    "overrides"
-  ];
-
-  settingsOptions = {
-    mirage = defaultNullOpts.mkBool false ''
-      Set to `true` to use `mirage` variant instead of `dark` for dark background.
-    '';
-
-    overrides = defaultNullOpts.mkStrLuaOr (with lib.types; attrsOf highlight) { } ''
-      A dictionary of group names, each associated with a dictionary of parameters
-      (`bg`, `fg`, `sp` and `style`) and colors in hex.
-
-      Alternatively, `overrides` can be a function that returns a dictionary of the same
-      format.
-      You can use the function to override based on a dynamic condition, such as the value of
-      `background`.
-    '';
-  };
-
-  extraConfig = cfg: {
-    colorschemes.ayu.luaConfig.content = ''
-      local ayu = require("ayu")
-      ayu.setup(${toLuaObject cfg.settings})
-      ayu.colorscheme()
-    '';
-  };
+_: {
+  base00 = "#0F1419";
+  base01 = "#131721";
+  base02 = "#272D38";
+  base03 = "#3E4B59";
+  base04 = "#B3B1AD";
+  base05 = "#D9D7CE";
+  base06 = "#E3E1DC";
+  base07 = "#F3F4F5";
+  base08 = "#F07178";
+  base09 = "#FF8F40";
+  base0A = "#E6B450";
+  base0B = "#A6CC70";
+  base0C = "#95E6CB";
+  base0D = "#59C2FF";
+  base0E = "#D2A6FF";
+  base0F = "#E6B673";
 }
