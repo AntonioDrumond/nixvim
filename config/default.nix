@@ -65,6 +65,8 @@
         "test"
         "tokyonight"
         "yoru"
+        "ayu"
+        "catpuccin"
       ];
     };
 
