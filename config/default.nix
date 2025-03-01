@@ -14,10 +14,10 @@
     ./plug/completion/copilot-cmp.nix
     ./plug/completion/schemastore.nix
 
-    ./plug/lsp/conform.nix
+    # ./plug/lsp/conform.nix
     ./plug/lsp/lsp.nix
     ./plug/lsp/lspsaga.nix
-    ./plug/lsp/none-ls.nix
+    # ./plug/lsp/none-ls.nix
     ./plug/lsp/trouble.nix
 
     ./plug/statusline/lualine.nix
