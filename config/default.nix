@@ -46,7 +46,7 @@
 
   options = {
     theme = lib.mkOption {
-      default = lib.mkDefault "oxocarbon";
+      default = lib.mkDefault "gruvbox";
       type = lib.types.enum [
         "aquarium"
         "decay"
