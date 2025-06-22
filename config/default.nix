@@ -54,7 +54,7 @@
         "everblush"
         "everforest"
         "far"
-        "gruvbox"
+        # "gruvbox"
         "jellybeans"
         "material"
         "material-darker"
